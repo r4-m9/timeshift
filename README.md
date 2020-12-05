@@ -101,6 +101,18 @@ You can selectively include items for backup from the ***Settings*** window. Sel
 - **Encrypted Private Directory** - For users with encrypted *Private* directory, the encrypted files in ```$HOME/.Private```, as well as the decrypted files in ```$HOME/Private```, will be excluded (as it contains user data). Filters added by user to include files from ```$HOME/.Private``` or ```$HOME/Private``` will be ignored.
 - **Docker & Containers** - Docker and containerized systems are not supported. Running Timeshift on such systems will have unpredictable results.
 
+## Compilation
+On Fedora, I needed to install:
+```sh
+sudo dnf install json-glib-devel libgee-devel vte291-devel vala
+```
+
+Then some make + maybe some fiddeling with program icons at end.
+```make
+make all
+sudo make install
+```
+
 ## Installation
 
 #### Ubuntu-based Distributions

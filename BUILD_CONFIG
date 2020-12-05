@@ -5,8 +5,8 @@ pkg_name="timeshift"
 
 pkg_version=$(dpkg-parsechangelog --show-field Version)
 
-build_deb=1
-build_rpm=0
+build_deb=0
+build_rpm=1
 build_arch=0
 
 deb_arch="amd64 i386 arm64 armhf" # amd64 i386 arm64 armhf
@@ -15,6 +15,6 @@ arch_arch="" # x86_64 i686
 
 pkg_version=$(dpkg-parsechangelog --show-field Version)
 
-git_origin="git@github.com:teejee2008/timeshift.git"
+git_origin="git@github.com:r4-m9/timeshift.git"
 
 

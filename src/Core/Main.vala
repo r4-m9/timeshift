@@ -540,7 +540,7 @@ public class Main : GLib.Object{
 		exclude_list_default.add("/proc/*");
 		exclude_list_default.add("/sys/*");
 		exclude_list_default.add("/media/*");
-		exclude_list_default.add("/mnt/*");
+		//exclude_list_default.add("/mnt/*");
 		exclude_list_default.add("/tmp/*");
 		exclude_list_default.add("/run/*");
 		exclude_list_default.add("/var/run/*");
